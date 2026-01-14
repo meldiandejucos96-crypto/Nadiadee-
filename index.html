@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MELDIAN ALMOETE DEJUCOS</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220<title>MELDIAN ALMOETE DEJUCOS</title>
+      --accent:#06b6d4;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+      --radius:16px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#071025 120%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      padding:32px;#42445A
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .container{
+      max-width:1000px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.03));
+      border-radius:20px;
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:24px;
+    }
+    .profile-card{background:var(--card);border-radius:var(--radius);padding:18px}
+    .photo-wrap{width:100%;padding-top:100%;position:relative;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.05));overflow:hidden;margin-bottom:14px}
+    .photo-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .upload-label{display:flex;gap:8px;align-items:center;justify-content:center;position:absolute;left:8px;bottom:8px;padding:6px 8px;border-radius:8px;background:var(--glass);font-size:13px;color:var(--muted);cursor:pointer}
+    .name{font-size:20px;font-weight:700;margin:6px 0}
+    .title{font-size:13px;color:var(--muted);margin-bottom:12px}
+    .bio{font-size:14px;line-height:1.5;color:#dbe9f5}
+    .contact-list{margin-top:16px;display:flex;flex-direction:column;gap:8px}
+    .contact-item{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--muted)}
+    .btn{display:inline-block;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#022;padding:10px 14px;border-radius:12px;font-weight:700;text-decoration:none}
+    .content{padding:8px 6px}
+    h2{margin:2px 0 12px;font-size:18px}
+    .section{background:rgba(255,255,255,0.02);padding:14px;border-radius:12px;margin-bottom:14px}
+    .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .skill .meta{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+    .bar{height:12px;background:rgba(255,255,255,0.04);border-radius:999px;overflow:hidden}
+    .bar > i{display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--accent),#8b5cf6);border-radius:999px;transition:width 900ms}
+    .contact-form{display:flex;flex-direction:column;gap:8px}
+    .contact-form input,.contact-form textarea{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:10px;color:inherit}
+    .socials{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{padding:8px 10px;border-radius:999px;background:rgba(255,255,255,0.02);font-size:13px}
+    footer{font-size:13px;color:var(--muted);text-align:center;margin-top:10px}
+    @media (max-width:880px){.container{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="profile-card">
+      <div class="photo-wrap">
+        <img id="profilePhoto" src="/1768013501204.jpg" alt="Profile Photo">
+        <label class="upload-label" for="photoInput">📷 Upload</label>
+        <input id="photoInput" type="file" accept="image/*" style="display:none">
+      </div>
+      <div class="name">Meldian Almoete Dejucos</div>
+      <div class="title">Computer Science Student • Web Developer</div>
+      <div class="bio">I am a passionate Computer Science student who loves creating user-friendly websites and applications. I focus on clean design, functional code, and continuous learning to grow as a developer.</div>
+      <div class="contact-list">
+        <div class="contact-item"><strong>Email:</strong>&nbsp;<a href="mailto: meldiandejucos96@gmail.com" style="color:var(--muted);text-decoration:none">meldiandejucos96@gmail.com</a></div>
+        <div class="contact-item"><strong>Phone:</strong>&nbsp;<span style="color:var(--muted)">+63 915 995 2035</span></div>
+        <div class="contact-item"><strong>Location:</strong>&nbsp;<span style="color:var(--muted)">Philippines</span></div>
+      </div>
+      <div style="margin-top:14px;display:flex;gap:8px">
+        <a class="btn" href="#">Download CV</a>
+        <a class="btn" style="background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);font-weight:600" href="#contact">Contact</a>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="section">
+        <h2>About</h2>
+        <p>I enjoy designing and building responsive websites and applications. I am motivated to apply my knowledge to real-world projects and aim to contribute to innovative solutions in techn
